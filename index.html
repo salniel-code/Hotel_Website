@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style/style.css" rel="stylesheet">
+     
+    </head>
+    <body>
+        
+        <!-- Header -->
+        <header>
+            <div id="header-logo">
+                <h1 id="logo">
+                    <a href="*">Hotel Eilean</a>
+                </h1>
+                <div id="header-texts">
+                    <h3>Inverness &#8226; Scotland</h3>
+                </div>
+            </div>
+            
+        </header>
+        <!-- Navigation -->
+        <nav id="menu-nav" class="menu">
+            <ul>
+                <li><a href="*">Accomodations</a></li>
+                <li><a href="*">Hotel Grounds</a></li>
+                <li><a href="*">Blog</a></li>
+                <li><a href="*">Reservation</a></li>
+                <li><a href="*">Info</a></li>
+            </ul>
+        </nav>
+        <!-- image large -->
+        <div id="large-img"></div>
+        <!-- Main content - articles -->
+        <main>
+            <article id="article-intro">
+                <h2>Welcome to Hotel Eilean</h2>
+            </article>
+            <div id="first-article-container" class="article-containers">
+                <article id="index-article-1" class="index-articles">
+                    <P>Curabitur tincidunt libero nisl, quis iaculis nisl aliquam nec. Pellentesque libero lacus, dictum id semper vitae, volutpat nec tellus. Praesent vehicula dolor at varius porttitor. Dapibus eget, euismod at neque.</P>
+                    <a href="*" class="btns">Book now</a>
+                </article>
+            </div>
+
+            <div class="article-containers">
+                <div id="index-article-2" class="index-articles">
+                    <h2>Gibberish</h2>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non metus hendrerit, porta ipsum a, tristique sem. Suspendisse nec felis malesuada, tincidunt lacus eu, ultricies nisi. Cras imperdiet tellus a accumsan viverra.</P>
+                    <P>Vivamus metus ipsum, cursus ut dapibus eget, euismod at neque. Curabitur feugiat magna lectus, quis auctor est congue sed. Quisque vel tortor vitae leo ullamcorper scelerisque.</P>
+                    <P>Curabitur tincidunt libero nisl, quis iaculis nisl aliquam nec. Pellentesque libero lacus, dictum id semper vitae, volutpat nec tellus. Praesent vehicula dolor at varius porttitor.</P>
+                    <P>Metus ipsum, euismod at neque. Curabitur feugiat magna lectus, quis auctor est congue sed. Quisque vel tortor vitae leo ullamcorper scelerisque.</P>
+                    <a href="*" class="btns">Read more</a>
+                </div>
+                <div id="img-index-2" class="index-articles-img">
+                    <img src="/images/room2.jpg" alt="image of castle">
+                </div>
+            </div>
+            <div class="article-containers">
+                <div id="img-index-3" class="index-articles-img"><img src="/images/room1.jpg" alt="image of castle"></div>
+                <div id="index-article-3" class="index-articles">
+                    <h2>Rubrik</h2>
+                    <P>Vivamus metus ipsum. Quis auctor est congue sed. Quisque vel tortor vitae leo ullamcorper scelerisque.</P>
+                    <P>Curabitur, quis iaculis nisl aliquam nec. Pellentesque libero lacus, dictum id semper vitae, volutpat nec tellus. Praesent vehicula dolor at varius porttitor.</P>
+                   
+                    <a href="*" class="btns">Read more</a>
+                </div>
+               
+            </div>
+
+
+
+        </main>
+        <!-- Footer -->
+        <footer>
+            <p>Design by Sally Nielsen</p>
+        </footer>
+      
+       <script>
+            window.onscroll = function(){stickMenu()}
+            let navBar = document.getElementById("menu-nav");
+            let stick = navBar.offsetTop;
+    
+            function stickMenu(){
+                if(window.pageYOffset >= stick){
+                    navBar.classList.add("stickShadow")
+                   
+                } else {
+                    navBar.classList.remove("stickShadow");
+                 
+                }
+            }
+          </script>
+       
+       
+     
+    </body>
+</html>
